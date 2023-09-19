@@ -16,7 +16,7 @@ const Nav = () => {
             </a>
             { open && 
               <div className=''>
-              <ul className ={`flex-1 flex justify-center items-center gap-16 max-lg:hidden`}>
+              <ul className ={`lg:flex-1 lg:flex lg:justify-center lg:items-center lg:display-block justify-center gap-4`}>
                 {navLinks.map( (item) => (
                     <li key={item.label}>
                       <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray '>
