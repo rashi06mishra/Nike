@@ -14,8 +14,8 @@ const Nav = () => {
             <a href="">
                 <img src={headerLogo} alt="Logo" width={130} height={29} />
             </a>
-            { open && 
-              <div className=''>
+            { open &&
+              <div className= ''>
               <ul className ={`lg:flex-1 lg:flex lg:justify-center lg:items-center lg:display-block justify-center gap-4`}>
                 {navLinks.map( (item) => (
                     <li key={item.label}>
