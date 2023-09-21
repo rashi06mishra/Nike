@@ -9,7 +9,7 @@ const Nav = () => {
   console.log(open);
 
   return (
-    <header className='padding-x py-8 absolute z-10 w-full'>
+    <header className='padding-x py-8  z-10 w-full sticky top-0'>
         <nav className='flex justify-between items-center max-container '>
             <a href="/">
                 <img 
@@ -19,8 +19,10 @@ const Nav = () => {
                 height={29} 
                 />
             </a>
-            { open && 
-              <div className= ''>
+            { <div className= {`lg:block xl:block
+                ${
+                  open?"block":"hidden" 
+                }`}>
               <ul className ={`lg:flex-1 lg:flex lg:justify-center lg:items-center justify-center gap-16`}>
                 {navLinks.map( (item) => (
                     <li key={item.label}>
